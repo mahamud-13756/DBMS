@@ -14,12 +14,13 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUp extends AppCompatActivity {
 
-    private EditText edtFullName, edtUserName, edtEmail, edtPassword, edtConfirmPassword;
+    private TextInputEditText edtFullName, edtUserName, edtEmail, edtPassword, edtConfirmPassword;
     Button createAccount;
 
     private FirebaseAuth mAuth;
@@ -104,5 +105,7 @@ public class SignUp extends AppCompatActivity {
         edtEmail = findViewById(R.id.edtEmail);
         edtPassword = findViewById(R.id.edtPassword);
         edtConfirmPassword = findViewById(R.id.edtConfirmPassword);
+        createAccount = findViewById(R.id.go);
+
     }
 }
