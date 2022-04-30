@@ -29,7 +29,7 @@ public class SignUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        init_();
+        init();
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -99,7 +99,7 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
-    private void init_() {
+    private void init() {
         edtFullName = findViewById(R.id.edtFullName);
         edtUserName = findViewById(R.id.edtUserName);
         edtEmail = findViewById(R.id.edtEmail);
